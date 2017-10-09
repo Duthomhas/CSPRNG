@@ -18,7 +18,7 @@ Using it couldn’t be simpler:
     
     int main()
     {
-      duthomhas::CSPRNG rng;
+      duthomhas::csprng rng;
       std::cout << rng() << "\n";
       
 Want a **double**?
@@ -42,7 +42,7 @@ Perhaps you’d just like to have a proper
 [std::seed_seq](http://en.cppreference.com/w/cpp/numeric/random/seed_seq) 
 for your Mersenne Twister?
 
-      duthomhas::CSPRNG seed;
+      duthomhas::csprng seed;
       std::mt19937 rng( seed.sseq );
 
       
